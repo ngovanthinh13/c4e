@@ -1,0 +1,64 @@
+/* html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  }
+  
+ol, ul {
+list-style: none;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-top: 30px;
+    background-color: red;
+}
+
+div.block.block-1 {
+    
+    height: 300px;
+    width: 200px;
+}
+
+div.block-2 {
+    height: 200px;
+    width: 100px;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+/* .parent {
+    width: 500px;
+    background-color: blue;
+} */
+
+.parent .child-1 {
+    /* cách truy cập vào child-1 */
+}
+
+.parent .child-4 .child-child-1 {
+    /* cách truy cập vào child-child-1 */
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin: 20px;
+}
+
+.parent.that .child-4 .child-child-1 {
+    /* độ ưu tiên cao hơn */
+    background-color: red;
+}
